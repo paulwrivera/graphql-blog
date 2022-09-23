@@ -1,9 +1,16 @@
-import React from 'react';
-import { useRouter } from 'next/router';
+import React from "react";
+import { useRouter } from "next/router";
 
-import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader } from '../../components';
-import { getPosts, getPostDetails } from '../../services';
-import { AdjacentPosts } from '../../sections';
+import {
+  PostDetail,
+  PostWidget,
+  Author,
+  Comments,
+  CommentsForm,
+  Loader,
+} from "../../components";
+import { getPosts, getPostDetails } from "../../services";
+import { AdjacentPosts } from "../../sections";
 
 const PostDetails = ({ post }) => {
   const router = useRouter();
@@ -26,7 +33,10 @@ const PostDetails = ({ post }) => {
           <div className="col-span-1 lg:col-span-4">
             <div className="relative lg:sticky top-20">
               <Author author={post.author} />
-              <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />
+              <PostWidget
+                slug={post.slug}
+                categories={post.categories.map((category) => category.slug)}
+              />
             </div>
           </div>
         </div>
