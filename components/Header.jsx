@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { getCategories } from "../services";
+import React, { useState, useEffect } from 'react';
+import { getCategories } from '../services';
 
 const Header = () => {
   const [categories, setCategories] = useState([]);
@@ -55,8 +55,8 @@ const Header = () => {
         <div
           className={
             isNavExpanded
-              ? "mobile-menu w-full md:block md:w-auto"
-              : "hidden mobile-menu w-full md:block md:w-auto"
+              ? 'mobile-menu w-full md:block md:w-auto'
+              : 'hidden mobile-menu w-full md:block md:w-auto'
           }
           id="navbar-default"
         >

@@ -1,6 +1,6 @@
-import React from "react";
-import moment from "moment";
-import Link from "next/link";
+import React from 'react';
+import moment from 'moment';
+import Link from 'next/link';
 
 const PostCard = ({ post }) => (
   <div className="max-w-sm w-full lg:max-w-full lg:flex mb-4">
@@ -16,13 +16,13 @@ const PostCard = ({ post }) => (
         <div className="flex items-center mb-4">
           <div className="text-sm mb-2">
             <p className="text-gray-900 leading-none">
-              by {post.author.name} on{" "}
-              {moment(post.createdAt).format("MMM DD, YYYY")}
+              by {post.author.name} on{' '}
+              {moment(post.createdAt).format('MMM DD, YYYY')}
             </p>
           </div>
         </div>
         <p className="text-gray-700 text-base">
-          {post.excerpt.substring(0, 240)}...{" "}
+          {post.excerpt.substring(0, 240)}...{' '}
           <a className="text-blue-500 text-l" href={`/post/${post.slug}`}>
             Read More
           </a>

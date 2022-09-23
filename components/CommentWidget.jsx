@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { getRecentComments } from "../services";
+import React, { useState, useEffect } from 'react';
+import { getRecentComments } from '../services';
 
 const CommentWidget = () => {
   const [relatedComments, setRelatedComments] = useState([]);
